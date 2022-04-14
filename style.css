@@ -1,0 +1,182 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 2em;
+}
+
+main.login {
+  /* toda a tela para a section login */
+  width: 100vw;
+  height: 100vh;
+
+  /* aplicando flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style login-card */
+div.login-card {
+  width: 30%;
+  height: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: var(--form-background);
+
+  margin-left: 4vw;
+
+  border-radius: 5px;
+}
+
+div.login-title {
+  color: var(--text-title);
+
+  display: flex;
+  gap: .5em;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+p {
+  color: var(--text-base);
+  font-size: .9em;
+
+  margin-bottom: 2em;
+}
+
+form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style da div login input */
+div.login-input {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+/* Input login and password style */
+input[type="email"], [type="password"] {
+  border-radius: 5px;
+  border: 1px solid var(--text-base);
+
+  padding: .6em;
+
+  text-indent: 2em;
+
+  margin-bottom: 1.5em;
+}
+
+/* Style login input */
+input[type="email"] {
+  background: url("images/mail.svg") no-repeat left 2% center;
+}
+
+input[type="email"]:focus-within {
+  background: url("images/mail-focus.svg") no-repeat left 2% center;
+
+  outline: none;
+
+  border-color: var(--primary-color);
+}
+
+/* Style password input */
+input[type="password"] {
+  background: url("images/lock.svg") no-repeat left 2% center, url("images/eye.svg") no-repeat right 2% center;
+}
+
+input[type="password"]:focus-within {
+  background: url("images/lock-focus.svg") no-repeat left 2% center;
+
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Style da label */
+label {
+  color: var(--text-base);
+
+  margin-bottom: .5em;
+}
+
+/* bottom login card */
+.bottom-login-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 50%;
+}
+
+.password-lost {
+  color: var(--primary-color);
+  font-size: .8rem;
+}
+
+label[for="remember"] {
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+
+/* button style */
+button.login-account {
+  background: var(--primary-color);
+  
+  margin: 1em 0;
+  padding: 15px;
+  width: 50%;
+
+  border-radius: 5px;
+  border: none;
+
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* create account */
+p.create-account {
+  color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+div.image-background {
+  height: 100vw;
+  width: 50vw;
+
+
+  background-image: url("images/side-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
