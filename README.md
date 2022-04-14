@@ -11,7 +11,7 @@
 
 ## 💻 Sobre o projeto
 
-Desafio da rocketseat, para iniciantes, praticarem suas habilidades em HTML e CSS aprendidos na trilha discover, voltada para iniciantes.
+Desafio da rocketseat, para iniciantes praticarem suas habilidades em HTML e CSS aprendidos na trilha discover.
 
 ## 🦸 Autor
 
