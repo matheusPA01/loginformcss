@@ -175,8 +175,56 @@ div.image-background {
   width: 50vw;
 
 
-  background-image: url("images/side-image.jpg");
+  background-image: url("images/side-image-2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+/* Parte responsiva */
+
+@media only screen and (max-width: 1024px) {
+
+  main.login {
+    /* aplicando flexbox */
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style login-card */
+  div.login-card {
+    flex-direction: column;
+
+    width: 80vw;
+
+    background: var(--background);
+  }
+
+  div.login-title {
+    width: 100%;
+  }
+
+  p.login-message {
+    width: 100%;
+  }
+
+  /* Style da div login input */
+  div.login-input {
+    width: 95%;
+  }
+
+  /* bottom login card */
+  .bottom-login-card {
+    width: 95%;
+  }
+
+  button.login-account {
+    width: 95%;
+  }
+
+  div.image-background {
+    display: none;
+  }
 }
